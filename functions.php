@@ -1,15 +1,23 @@
-
 <?php
+/**
+ * Enqueue styles and scripts
+ */
 function theme_enqueue_styles_scripts() {
-    // Enqueue CSS
-    wp_enqueue_style('main-style', get_template_directory_uri() . '/styles.css', array(), '1.0.0', 'all');
+    // Enregistrement et chargement du fichier CSS principal
+    wp_enqueue_style(
+        'main-style', 
+        get_stylesheet_directory_uri() . '/style.css',
+        array(), 
+        filemtime(get_stylesheet_directory() . '/style.css')
+    );
     
-    // Enqueue JavaScript
-    wp_enqueue_script('main-script', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true);
+    // Enregistrement et chargement du fichier JavaScript
+    wp_enqueue_script(
+        'main-script', 
+        get_stylesheet_directory_uri() . '/js/scripts.js', 
+        array('jquery'), 
+        filemtime(get_stylesheet_directory() . '/js/scripts.js'), 
+        true
+    );
 }
-
-// Hook into WordPress
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles_scripts');
-?>
-
-
