@@ -1,11 +1,48 @@
-/*
-Theme Name: Nathalie Mota
-Theme URI: 
-Author: Farid
-Author URI: 
-Description: Thème personnalisé pour Nathalie Mota
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: nathalie-mota
-*/
+
+/*   - CSS Nathalie Mota -   */
+
+/* Import Space Mono - normal et italique avec plusieurs épaisseurs */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Import Poppins avec plusieurs épaisseurs */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1, h2 {
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+}
+h3 {
+    font-family: 'Space Mono', monospace;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 1440px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
