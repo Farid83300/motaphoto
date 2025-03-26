@@ -1,8 +1,4 @@
-<?php
-/**
- * 
- */
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -27,7 +23,7 @@
 		<nav id="nav-menu" role="navigation">
 			<?php
 				wp_nav_menu(array(
-				'theme_location' =>	'menu-header',
+				'theme_location' =>	'nav-menu-header',
 				'container' => false,
 				'menu_class' => 'menu',
 				));

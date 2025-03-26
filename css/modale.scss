@@ -1,0 +1,78 @@
+/* Style général de la modale */
+.modal-cf7 {
+    width: 597px;
+    height: 769px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Style du header avec logo */
+  .modal-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .modal-header img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Style du formulaire */
+  .wpcf7-form p {
+    margin-bottom: 20px;
+  }
+  
+  /* Style des labels */
+  .wpcf7-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Style des champs input */
+  .wpcf7-form input[type="text"],
+  .wpcf7-form input[type="email"],
+  .wpcf7-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  /* Style du bouton d'envoi */
+  .wpcf7-submit {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .wpcf7-submit:hover {
+    background-color: #333333;
+  }
+  
+  /* Messages d'erreur */
+  .wpcf7-not-valid-tip {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .wpcf7-response-output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+  }
